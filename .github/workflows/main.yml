@@ -28,14 +28,14 @@ jobs:
           build-args: version=buster
           platforms: linux/arm64
           push: true
-          tags: ghcr.io/bugaevc/debian-toolbox:buster
+          tags: ghcr.io/siroj42/debian-toolbox:buster
 
       - name: Build and push Debian Bullseye image
         uses: docker/build-push-action@v2
         with:
           platforms: linux/arm64
           push: true
-          tags: ghcr.io/bugaevc/debian-toolbox:bullseye
+          tags: ghcr.io/siroj42/debian-toolbox:bullseye
 
       - name: Build and push Ubuntu 18.04 image
         uses: docker/build-push-action@v2
@@ -45,7 +45,7 @@ jobs:
             distro=ubuntu
             version=18.04
           push: true
-          tags: ghcr.io/bugaevc/ubuntu-toolbox:18.04
+          tags: ghcr.io/siroj42/ubuntu-toolbox:18.04
 
       - name: Build and push Ubuntu 20.04 image
         uses: docker/build-push-action@v2
@@ -55,7 +55,7 @@ jobs:
             distro=ubuntu
             version=20.04
           push: true
-          tags: ghcr.io/bugaevc/ubuntu-toolbox:20.04
+          tags: ghcr.io/siroj42/ubuntu-toolbox:20.04
 
       - name: Build and push Ubuntu 20.10 image
         uses: docker/build-push-action@v2
@@ -65,7 +65,7 @@ jobs:
             distro=ubuntu
             version=20.10
           push: true
-          tags: ghcr.io/bugaevc/ubuntu-toolbox:20.10
+          tags: ghcr.io/siroj42/ubuntu-toolbox:20.10
 
       - name: Build and push Ubuntu 21.04 image
         uses: docker/build-push-action@v2
@@ -75,4 +75,4 @@ jobs:
             distro=ubuntu
             version=21.04
           push: true
-          tags: ghcr.io/bugaevc/ubuntu-toolbox:21.04
+          tags: ghcr.io/siroj42/ubuntu-toolbox:21.04
